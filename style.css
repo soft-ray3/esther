@@ -1,0 +1,223 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #FF69B4;
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.funny-note {
+    color: #ffffff;
+    font-size: 1.2em;
+    text-align: center;
+    margin-bottom: 20px;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+button {
+    background: linear-gradient(45deg, #FF69B4, #FF1493);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+button:hover {
+    background: linear-gradient(45deg, #FF1493, #C71585);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.video {
+    /* background-color: rgba(255, 255, 255, 0.9); */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    max-width: 90%;
+    margin: 20px auto;
+}
+
+.video h2 {
+    color: #FF69B4;
+    text-align: center;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+video {
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    max-width: 100%;
+    height: auto;
+}
+
+iframe {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    .buttons {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+
+    .video {
+        padding: 10px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    video {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+
+
+
+
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-image: url('/PHOTO-2025-02-19-11-11-31.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 20px;
+    color: white;
+    min-height: 100vh;
+}
+
+.overlay {
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+       top: 700px;
+}
+
+h1 {
+    background: linear-gradient(45deg, #FF69B4, #FF1493, #C71585);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 3em;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.buttons {
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+button {
+    background: linear-gradient(45deg, #FF69B4, #FF1493, #C71585);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+    background: linear-gradient(45deg, #C71585, #FF1493, #FF69B4);
+}
+
+.video {
+    margin-top: 30px;
+    /* background-color: rgba(255, 255, 255, 0.9); */
+    padding: 20px;
+    border-radius: 10px ;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+}
+
+.video h2 {
+    background: linear-gradient(45deg, #FF69B4, #FF1493, #C71585);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+video {
+    max-width: 100%;
+    /* height: auto; */
+    border-radius: 10px;
+}
+
+
+@media (max-width: 480px) {
+  video {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  video source {
+    width: 100%;
+    height: auto;
+  }
+}
